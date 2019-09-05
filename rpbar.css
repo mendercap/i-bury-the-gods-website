@@ -1,0 +1,25 @@
+#rp-bar{
+	width: 100%;
+	top: 0;
+	right: 0;
+	position: fixed;
+    border: solid 1px;
+/*
+	-webkit-box-shadow: 0 0 2px 2px #212121;
+    -moz-box-shadow: 0 0 2px 2px #212121;
+    box-shadow: 0 0 2px 2px #212121;
+*/
+}
+#rp-bar div {
+	height: 100%;
+	float:left;
+	overflow:hidden;
+	position: relative;
+}
+#rp-read{
+/*	background-color: #88adbd;*/
+	background-color: #bad2dd;
+}
+#rp-unread{
+	background-color: #37697f;
+}

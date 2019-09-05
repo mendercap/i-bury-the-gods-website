@@ -1,0 +1,206 @@
+/* FONTS */
+
+/* Load Equity Text A to be used as the body text font. */
+@font-face {
+    font-family: "Equity";
+    src: url("fonts/Equity Text A Regular.otf")
+}
+
+/* Load Equity Caps A to be used as the header and link text font. */
+@font-face {
+    font-family: "Equity Small Caps";
+    src: url("fonts/Equity Caps A Regular.otf")
+}
+
+/* Set headings and links to use lowercase Equity Caps A. */
+h1,
+h2,
+h3,
+.back-to-top,
+.title,
+.email,
+li a,
+.content a,
+#nav-bar li a,
+.emphasis,
+.copyright,
+th {
+    font-family: "Equity Small Caps";
+    text-transform: lowercase;
+    font-variant: small-caps;
+    font-weight: normal;
+}
+
+tr:nth-child(even) {
+  background-color: #464646;
+}
+
+table
+{
+  border-collapse: collapse;
+  border-width: 0px;
+}
+
+td, th {
+  padding: 4px;
+}
+
+/* HEADER AND LOGO*/
+
+/* Center the header and set its height */
+#header {
+    text-align: center;
+    height: 400px;
+}
+
+/* Add padding to the logo image and set its width */
+#header img {
+    padding-top: 50px;
+    width: 600px;
+}
+
+/* Add a margin of 45px at the bottom of the logo. */
+#header {
+    height: auto !important;
+    margin-bottom: 45px;
+}
+
+/* Make the logo span the entire width of the page. */
+#header img {
+        max-width: 100%;
+        height: auto;
+}
+
+
+/* BACKGROUND */
+
+/* Set background image and make it span the entire page. */
+body {
+    background-image: url(images/Background.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    line-height: 120%;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+
+
+/* CONTAINERS */
+
+/* Set up a container for content. */
+.outer-container {
+    margin: 0 auto;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #333;
+    border-radius: 1px;
+}
+
+/* Set the width of the container to span the page if the screen size is under 640px. */
+@media all and (max-width: 640px) {
+	.outer-container {
+        width: auto;
+	}
+}
+
+/* Set the width of the container to 600px if the screen size is over 640px. */
+@media all and (min-width: 640px) {
+	.outer-container {
+        width: 600px;
+	}
+}
+
+/* Container within the container above to create a border. */
+.inner-container {
+    border: 1px solid white;
+    border-radius: 1px;
+}
+
+
+/* CONTENT*/
+
+/* Remove margin from top level headers. */
+h1 {
+    margin-top: 0;
+}
+
+h2 {
+padding-top: 20px;
+}
+
+/* Text content within the inner container. */
+.content {
+    padding: 20px;
+    color: white;
+}
+
+p{
+    margin-block-start: 0.75em; /* was 1 em */
+    margin-block-end: 0.75em;
+}
+
+
+
+
+/* CONTENT LINKS*/
+
+/* Links within the text content are white and have no decoration. */
+.content a {
+    color: #88adbd;
+    text-decoration: none;
+}
+
+/* On hover, links within the text content will be underlined. */
+.content a:hover {
+    text-decoration: underline;
+}
+
+
+/* NAVIGATION */
+
+#nav-bar {
+    border-bottom: 1px solid white;
+}
+
+#nav-bar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#nav-bar li {
+    float: left;
+    border-right: 1px solid white;
+}
+
+#nav-bar li:last-child {
+    border-right: none;
+}
+
+#nav-bar li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
+
+#nav-bar li a:hover {
+    background-color: #88adbd;
+}
+
+/* COPYRIGHT */
+
+.copyright {
+    color: #fff;
+    position: relative;
+    text-align: center;
+    font-size: 0.8em;
+    margin: 0;
+    padding: 0;
+}
